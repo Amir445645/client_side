@@ -19,7 +19,8 @@ export default function App() {
         SetUid(res.data);
       })
       .catch((err) => {
-        console.log("No token ");
+        console.log("No token Bro !! ");
+        console.log(err);
       });
     if (uid) dispatch(getUser(uid));
   }, [uid, dispatch]);
